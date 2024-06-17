@@ -1,4 +1,4 @@
-import express from 'express'
+import express from 'express'//cargar express
 import artigosController from '../controllers/ArtigosController.js'
 
 const router = express.Router()

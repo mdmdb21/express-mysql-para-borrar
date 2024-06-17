@@ -11,7 +11,7 @@ router.get(
 
 router.post(
     '/',
-    provedoresController.crearProvedor
+    provedoresController.crearProvedores
 )
 
 router.route('/:codigo')

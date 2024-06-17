@@ -1,5 +1,5 @@
 class Artigos {
-    consultarArtigos (_, res) {
+    consultarArtigos (_, res) { //callback funcion dentro de otra funcion
         res.send('Todos los artículos')
     }
 
@@ -8,26 +8,26 @@ class Artigos {
     }
 
     verDetalleArtigo (req, res) {
-        const id = req.params.codigo
+        const {codigo} = req.params //desestructuración
         res.json({
             message: 'Detalle dun artigo',
-            cod: id
+            codigo
         })
     }
     
     actualizarArtigo (req, res) {
-        const id = req.params.codigo
+        const {codigo} = req.params
         res.json({
             message: 'Actualizar artigo',
-            cod: id
+            codigo
         })
     }
 
     elimarArtigo (req, res) {
-        const id = req.params.codigo
+        const {codigo} = req.params
         res.json({
             message: 'Eliminar artigo',
-            cod: id
+            codigo
         })
     }
 
